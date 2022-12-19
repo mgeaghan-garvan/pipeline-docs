@@ -22,7 +22,7 @@ To run from FASTQs, the sample table needs the following columns:
 | RGPU | Platform unit. Typically we use the format '\<flowcell ID\>.\<flowcell lane\>'. |
 | RGLB | Library ID |
 | RGCN | Sequencing centre, e.g. 'KCCG' |
-| zone | Google Cloud zone to run the analysis in, typically 'australia-southeast1-a |
+| zone | Google Cloud zone to run the analysis in, typically 'australia-southeast1-a' |
 
 For re-processing a sample from BAMs or CRAMs, only the following columns are required:
 
@@ -31,7 +31,7 @@ For re-processing a sample from BAMs or CRAMs, only the following columns are re
 | entity:sample_id | External sample ID |
 | inputBam | BAM file to be reprocessed. Alternative to 'inputCram'. |
 | inputCram | CRAM file to be re-processed. Alternative to 'inputBam'. |
-| zone | Google Cloud zone to run the analysis in, typically 'australia-southeast1-a |
+| zone | Google Cloud zone to run the analysis in, typically 'australia-southeast1-a' |
 
 **Note:** Internal and external sample IDs, along with library IDs, are recorded in the KCCG's MetricsDB runs database.
 
