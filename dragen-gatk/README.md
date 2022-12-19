@@ -42,13 +42,7 @@ The DRAGEN-GATK workflow is part of the WARP (WDL Analysis Research Pipelines) r
   - There is [another version of this pipeline](https://dockstore.org/my-workflows/github.com/mgeaghan-garvan/warp/WholeGenomeFromFastq), which originates from Michael's GitHub account on the branch `fastqtosam_dynamic_disk`, which was created to fix an issue where larger FASTQs would run out of disk space due to the `additional_disk` parameter not being used for the FastqToSam task (instead it was originally hard-coded at 400GB).
 - [WholeGenomeReprocessing](https://dockstore.org/workflows/github.com/shyamrav/warp/WholeGenomeReprocessing:australian_zone_dockers) is the pipeline to re-process BAM or CRAM files.
 
-To add these workflows to the Terra workspace, follow these steps:
-- Go to the "Workflows" tab on Terra and click on "Find a Workflow".
-- Under "Find Additional Workflows", click on "Dockstore". This will take you to the Dockstore website.
-- Search for the workflow of interest. For example, to add the `WholeGenomeReprocessing` workflow, search for "shyamrav/warp/WholeGenomeReprocessing".
-- Click on the matching workflow to go to the workflow's webpage.
-- Under the "Launch with" section, click on "Terra". This takes you to Terra's workflow import page.
-- Name the workflow and specify the desination workspace, then click "Import".
+To add these workflows to the Terra workspace, follow the steps in the [Terra docs](../terra/README.md).
 
 ### Workflow inputs
 
