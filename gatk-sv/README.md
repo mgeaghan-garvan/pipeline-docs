@@ -41,6 +41,7 @@ It is possible to run the batch pipeline with a single workflow ([GATKSVPipeline
 
 There are currently 12 main modules to the pipeline, which are listed here in the order to be run:
 - [01_GatherSampleEvidence](https://dockstore.org/workflows/github.com/shyamrav/gatk-sv/GATKSVPipelineBatch_01_GatherSampleEvidence:terra_test_2)
+  - By default this does not use the MELT software due to licencing restrictions. We have our own MELT docker (v2.2.2) [here](australia-southeast1-docker.pkg.dev/pb-dev-312200/gatk-sv/melt:v2.2.2). This can be supplied to the `GatherSampleEvidence:melt_docker` parameter to enable MELT. **However**, we have run into errors running the MELT-enabled workflow, which have been solved by disabling the fast algorithm in the Picard tools `CollectWgsMetrics` sub-task. This option isn't exposed in the `terra_test_2` branch, so another branch was created for this purpose: [terra_test_2_melt](https://dockstore.org/workflows/github.com/shyamrav/gatk-sv/GATKSVPipelineBatch_01_GatherSampleEvidence:terra_test_2)
 - [02_EvidenceQC](https://dockstore.org/workflows/github.com/shyamrav/gatk-sv/GATKSVPipelineBatch_02_EvidenceQC:terra_test_2)
 - [03_TrainGCNV](https://dockstore.org/workflows/github.com/shyamrav/gatk-sv/GATKSVPipelineBatch_03_TrainGCNV:terra_test_2)
 - [04_GatherBatchEvidence](https://dockstore.org/workflows/github.com/shyamrav/gatk-sv/GATKSVPipelineBatch_04_GatherBatchEvidence:terra_test_2)
@@ -69,8 +70,69 @@ The default outputs can be used by going to the "Outputs" tab on the workflow pa
 
 ## Running the workflow
 
--- WIP --
+### Stage 01: Gather Sample Evidence
+
+This stage is run on each sample individually. Simply select all the samples to be processed by selecting the "Run workflow(s) with inputs defined by data table" option, selecting "sample" under the "Select root entity type" dropdown box, clicking the "SELECT DATA" button, and selecting all desired samples. If running MELT, supply a MELT docker image to the `GatherSampleEvidence:melt_docker` parameter. As mentioned above, it may also be useful to use the default algorithm (as opposed to the default fast algorithm) for the Picard tools CollectWgsMetrics sub-task. To do this, use the `terra_test_2_melt` branch of the workflow and set `GatherSampleEvidence:use_fast_algorithm` to `false`.
+
+When everything is configured, run the workflow.
+
+### Stage 02: Evidence QC
+
+
+
+### Stage 03: Train gCNV
+
+
+### Stage 04: Gather Batch Evidence
+
+
+### Stage 05: Cluster Batch
+
+
+### Stage 06: Filter Batch
+
+#### 07a: Filter Batch Sites
+
+
+#### 07b: Plot SV Counts Per Sample
+
+
+#### 07c: Filter Batch Samples
+
+
+### Stage 08: Merge Batch Sites
+
+
+### Stage 09: Genotype Batch
+
+
+### Stage 10: Regenotype CNVs
+
+
+### Stage 11: Make Cohort VCF
+
+
+### Stage 12: Annotate VCF
+
 
 ## Expected time and cost
 
--- WIP --
+The following table lists approximate times and costs for running each stage with a typical input BAM/CRAM file with coverage of ~30x and size of ~30GB.
+
+| Stage | Approx. Time (hours) | Approx. Cost (AUD) |
+| ----- | ------------ | ------------ |
+| 01 (without MELT) | 13 | $1.65 |
+| 01 (with MELT) | 19 | $3.15 |
+| 02 |  |  |
+| 03 |  |  |
+| 04 |  |  |
+| 05 |  |  |
+| 06 |  |  |
+| 07a |    |
+| 07b |    |
+| 07c |    |
+| 08 |  |  |
+| 09 |  |  |
+| 10 |  |  |
+| 11 |  |  |
+| 12 |  |  |
