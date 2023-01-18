@@ -78,10 +78,20 @@ When everything is configured, run the workflow.
 
 ### Stage 02: Evidence QC
 
+This stage is run at the sample-set level rather than the sample level in Terra. A single sample-set should represent a batch of up to 500 samples. Simply select "sample_set" under the "Select root entity type" dropdown box, then click the "SELECT DATA" button and select the sample set for the current batch. Then run the workflow.
 
+After this step has run, it is a good idea to do some manual inspection of the quality control results. The important files to look at are:
+
+`<BATCH_NAME>_WGD_scores.txt` - dosage scores, which should be centred around 0. PCR- samples tend to be slightly lower than 0, PCR+ samples slightly higher.
+`<BATCH_NAME>_ploidy_plots.tar` - ploidy plots archive, which contains sex assignments (`ploidy_est/sample_sex_assignments.txt.gz`). Check this file for any discrepancies and update the PED file if necessary. Also check each `ploidy_est/estimated_CN_per_bin.all_samples.chr*.png` plot for any potential autosomal aneuploidies and remove the outlying samples.
+`<BATCH_NAME>.<SV_CALLER>.QC.outlier.low` - table of low-call outliers for each SV caller. The SV callers will be `Manta`, `Wham`, and optionally `Melt`.
+`<BATCH_NAME>.<SV_CALLER>.QC.outlier.high` - table of high-call outliers.
+
+At this stage, a new sample-set should be created reflecting the outlier-removed batch. This will be used for the following workflows.
 
 ### Stage 03: Train gCNV
 
+Simply select the new outlier-removed sample-set created following Stage 02 and start the run.
 
 ### Stage 04: Gather Batch Evidence
 
@@ -123,7 +133,7 @@ The following table lists approximate times and costs for running each stage wit
 | ----- | ------------ | ------------ |
 | 01 (without MELT) | 13 | $1.65 |
 | 01 (with MELT) | 19 | $3.15 |
-| 02 |  |  |
+| 02 | 3 | ? |
 | 03 |  |  |
 | 04 |  |  |
 | 05 |  |  |
