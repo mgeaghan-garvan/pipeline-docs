@@ -101,6 +101,7 @@ Simply select the new outlier-removed sample-set created following Stage 02 and 
 
 ### Stage 04: Gather Batch Evidence
 
+Run using the same sample set as Stage 03.
 
 ### Stage 05: Cluster Batch
 
@@ -140,8 +141,8 @@ The following table lists approximate times and costs for running each stage wit
 | ----- | ----- | ------------ | ------------ |
 | 01 (without MELT) | Run at sample level | 13 | $1.65 |
 | 01 (with MELT) | Run at sample level | 19 | $3.15 |
-| 02 | Run at batch level - 179 samples | 3 | ? |
-| 03 | Run at batch level - 167 samples (outliers removed) |  |  |
+| 02 | Run at batch level - 179 samples | 3 | $2.15 |
+| 03 | Run at batch level - 167 samples (outliers removed) | 7 | $30 |
 | 04 |  |  |  |
 | 05 |  |  |  |
 | 06 |  |  |  |
