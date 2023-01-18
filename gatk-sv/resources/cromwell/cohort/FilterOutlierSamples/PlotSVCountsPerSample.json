@@ -1,0 +1,10 @@
+{
+  "PlotSVCountsPerSample.sv_pipeline_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline:eph-fix-bad-ends-14b0202",
+  
+  "PlotSVCountsPerSample.N_IQR_cutoff": "6",
+
+  "PlotSVCountsPerSample.prefix": "ref_panel_1kg",
+  "PlotSVCountsPerSample.vcfs" : [ 
+    "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-MakeCohortVcf/MakeCohortVcf/bfd4ef15-d9ea-437b-ade4-bc08e79c29a8/call-CleanVcf/CleanVcf/cda267a8-81b0-46af-aab7-938f8cd42c4f/call-ConcatCleanedVcfs/cacheCopy/ref_panel_1kg.cleaned.vcf.gz"
+  ]
+}

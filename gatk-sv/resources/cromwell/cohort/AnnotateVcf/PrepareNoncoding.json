@@ -1,0 +1,4 @@
+{
+  "PrepareNoncoding.noncoding_bed_list": "File",
+  "PrepareNoncoding.sv_base_mini_docker":"us.gcr.io/broad-dsde-methods/tbrookin/sv-base-mini:92ffa2f"
+}

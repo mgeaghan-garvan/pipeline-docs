@@ -1,0 +1,6 @@
+{
+  "MergeBatchSites.sv_pipeline_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline:eph-fix-bad-ends-14b0202",
+  "MergeBatchSites.pesr_vcfs": ["gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-MergePesrVcfs/cacheCopy/ref_panel_1kg.filtered_pesr_merged.vcf.gz"],
+  "MergeBatchSites.depth_vcfs": ["gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-ExcludeOutliers/shard-4/cacheCopy/ref_panel_1kg.depth.outliers_removed.vcf.gz"],
+  "MergeBatchSites.cohort": "ref_panel_1kg"
+}

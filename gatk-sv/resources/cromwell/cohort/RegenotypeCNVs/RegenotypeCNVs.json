@@ -1,0 +1,25 @@
+{
+  "RegenotypeCNVs.sv_pipeline_rdtest_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline-rdtest:eph-fix-bad-ends-14b0202",
+  "RegenotypeCNVs.sv_pipeline_base_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline-base:eph-fix-bad-ends-14b0202",
+  "RegenotypeCNVs.sv_base_mini_docker":"us.gcr.io/broad-dsde-methods/tbrookin/sv-base-mini:92ffa2f",
+  "RegenotypeCNVs.sv_pipeline_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline:eph-fix-bad-ends-14b0202",
+  "RegenotypeCNVs.n_RdTest_bins": "100000",
+  "RegenotypeCNVs.n_per_split": "5000",
+
+  "RegenotypeCNVs.cohort": "ref_panel_1kg",
+  "RegenotypeCNVs.contig_list": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/primary_contigs.list",
+  "RegenotypeCNVs.regeno_coverage_medians": ["gs://gatk-sv-ref-panel-1kg/outputs/GenotypeBatch/6f4ea58f-ae01-4f24-b447-d8ea72f82425/call-GenotypeDepthPart2/GenotypeDepthPart2/89ff502b-ecc8-49c6-b978-3b86eb9c5cde/call-MergeRegenoCoverageMedians/ref_panel_1kg.regeno.coverage_medians_merged.bed"],
+
+  "RegenotypeCNVs.RD_depth_sepcutoffs": ["gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GenotypeBatch/GenotypeBatch/ad17f522-0950-4f0a-9148-a13f689082ed/call-GenotypeDepthPart1/GenotypeDepthPart1/be787bb1-25ff-4a54-92a6-2fa6faaee8ec/call-TrainRDGenotyping/TrainRDGenotyping/aa7bc7f2-9779-4242-aa5d-8a8ea4375af9/call-UpdateCutoff/cacheCopy/ref_panel_1kg.depth.depth_sepcutoff.txt"],
+
+  "RegenotypeCNVs.cohort_depth_vcf": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-ExcludeOutliers/shard-4/cacheCopy/ref_panel_1kg.depth.outliers_removed.vcf.gz",
+
+  "RegenotypeCNVs.ped_file": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/ref-panel/1KG/v1/ped/1kg_ref_panel_v1.ped",
+  "RegenotypeCNVs.batch_depth_vcfs": ["gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-ExcludeOutliers/shard-4/cacheCopy/ref_panel_1kg.depth.outliers_removed.vcf.gz"],
+
+  "RegenotypeCNVs.depth_vcfs": ["gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GenotypeBatch/GenotypeBatch/ad17f522-0950-4f0a-9148-a13f689082ed/call-GenotypeDepthPart2/GenotypeDepthPart2/0aafd752-e606-4196-86ac-41c1c3ce1eb2/call-ConcatGenotypedVcfs/cacheCopy/ref_panel_1kg.depth.vcf.gz"],
+  "RegenotypeCNVs.coveragefiles": ["gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-EvidenceQC/EvidenceQC/f7f8f407-0a3c-4c3d-982f-7bd181ac965a/call-MakeBincovMatrix/MakeBincovMatrix/0106cefa-5ebf-4131-9073-15413bf93a83/call-ZPaste/cacheCopy/ref_panel_1kg.RD.txt.gz"],
+  "RegenotypeCNVs.coveragefile_idxs": ["gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-EvidenceQC/EvidenceQC/f7f8f407-0a3c-4c3d-982f-7bd181ac965a/call-MakeBincovMatrix/MakeBincovMatrix/0106cefa-5ebf-4131-9073-15413bf93a83/call-ZPaste/cacheCopy/ref_panel_1kg.RD.txt.gz.tbi"],
+  "RegenotypeCNVs.medianfiles": ["gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-GatherBatchEvidence/GatherBatchEvidence/366e817a-feb2-4d3c-915c-a8bd25529b81/call-MedianCov/MedianCov/8ad48479-2e16-4be9-add6-1b47dbd9d95c/call-CalcMedCov/cacheCopy/ref_panel_1kg_medianCov.transposed.bed"],
+  "RegenotypeCNVs.batches": ["ref_panel_1kg"]
+}

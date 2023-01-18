@@ -1,0 +1,24 @@
+{
+  "AnnotateVcf.vcf" :   "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-MakeCohortVcf/MakeCohortVcf/bfd4ef15-d9ea-437b-ade4-bc08e79c29a8/call-CleanVcf/CleanVcf/cda267a8-81b0-46af-aab7-938f8cd42c4f/call-ConcatCleanedVcfs/cacheCopy/ref_panel_1kg.cleaned.vcf.gz",
+  "AnnotateVcf.vcf_idx" : "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-MakeCohortVcf/MakeCohortVcf/bfd4ef15-d9ea-437b-ade4-bc08e79c29a8/call-CleanVcf/CleanVcf/cda267a8-81b0-46af-aab7-938f8cd42c4f/call-ConcatCleanedVcfs/cacheCopy/ref_panel_1kg.cleaned.vcf.gz.tbi",
+
+  "AnnotateVcf.protein_coding_gtf" : "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/gencode.canonical_pc.gtf.gz",
+  "AnnotateVcf.linc_rna_gtf" :       "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/gencode.lincRNA.gtf.gz",
+  "AnnotateVcf.promoter_bed" :       "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/promoter.bed",
+  "AnnotateVcf.noncoding_bed" :       "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/noncoding.sort.hg38.bed",
+  "AnnotateVcf.ref_bed" :       "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/gnomad_AF/gnomad_v2.1_sv.sites.GRCh38.bed.gz",
+  "AnnotateVcf.ref_prefix" :       "gnomad_v2.1_sv",
+  "AnnotateVcf.population" :      ["ALL", "AFR", "AMR", "EAS", "EUR"],
+
+
+  "AnnotateVcf.contig_list" :  "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/primary_contigs.list",
+  "AnnotateVcf.ped_file":      "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/ref-panel/1KG/v1/ped/1kg_ref_panel_v1.ped",
+  "AnnotateVcf.sv_per_shard" : "5000",
+  "AnnotateVcf.max_shards_per_chrom_step1" : 200,
+  "AnnotateVcf.min_records_per_shard_step1" :  5000,
+
+  "AnnotateVcf.prefix" : "ref_panel_1kg",
+
+  "AnnotateVcf.sv_base_mini_docker":"us.gcr.io/broad-dsde-methods/tbrookin/sv-base-mini:92ffa2f",
+  "AnnotateVcf.sv_pipeline_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline:eph-fix-bad-ends-14b0202"
+}

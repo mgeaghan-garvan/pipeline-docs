@@ -1,0 +1,11 @@
+{
+  "GenerateFunctionalAnnotationResources.gencode_annotation_gtf":      "gs://broad-sv-dev-data/module_tests/07/inputs/prepare/gencode.v29.annotation.gtf.gz",
+  "GenerateFunctionalAnnotationResources.gencode_pc_transcripts_fa":   "gs://broad-sv-dev-data/module_tests/07/inputs/prepare/gencode.v29.pc_transcripts.fa.gz",
+  "GenerateFunctionalAnnotationResources.gencode_pc_translations_fa":  "gs://broad-sv-dev-data/module_tests/07/inputs/prepare/gencode.v29.pc_translations.fa.gz",
+  "GenerateFunctionalAnnotationResources.gencode_transcript_source":   "gs://broad-sv-dev-data/module_tests/07/inputs/prepare/gencode.v29.metadata.Transcript_source",
+
+  "GenerateFunctionalAnnotationResources.promoter_window": 1000,
+
+  "GenerateFunctionalAnnotationResources.sv_base_mini_docker":"us.gcr.io/broad-dsde-methods/tbrookin/sv-base-mini:92ffa2f",
+  "GenerateFunctionalAnnotationResources.sv_pipeline_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline:eph-fix-bad-ends-14b0202"
+}

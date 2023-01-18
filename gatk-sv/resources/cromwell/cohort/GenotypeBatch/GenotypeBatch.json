@@ -1,0 +1,29 @@
+{
+  "GenotypeBatch.sv_base_mini_docker":"us.gcr.io/broad-dsde-methods/tbrookin/sv-base-mini:92ffa2f",
+  "GenotypeBatch.sv_pipeline_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline:eph-fix-bad-ends-14b0202",
+  "GenotypeBatch.sv_pipeline_rdtest_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline-rdtest:eph-fix-bad-ends-14b0202",
+  "GenotypeBatch.linux_docker" : "marketplace.gcr.io/google/ubuntu1804",
+
+  "GenotypeBatch.n_RD_genotype_bins": "100000", 
+  "GenotypeBatch.n_per_split": "5000", 
+  "GenotypeBatch.pesr_exclude_list": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/PESR.encode.peri_all.repeats.delly.hg38.blacklist.bed.gz",
+  "GenotypeBatch.seed_cutoffs": "gs://gatk-sv-resources-public/hg38/v0/sv-resources/resources/v1/seed_cutoff.txt",
+  "GenotypeBatch.reference_build": "hg38",
+  "GenotypeBatch.ref_dict": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dict",
+
+  "GenotypeBatch.primary_contigs_list": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/primary_contigs.list",
+  "GenotypeBatch.sv_pipeline_base_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline-base:eph-fix-bad-ends-14b0202",
+
+  "GenotypeBatch.batch": "ref_panel_1kg",
+  "GenotypeBatch.rf_cutoffs": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSites/FilterBatchSites/13801c7d-9478-40dc-9a4a-2e80cbab1136/call-AdjudicateSV/cacheCopy/ref_panel_1kg.cutoffs",
+  "GenotypeBatch.batch_depth_vcf": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-ExcludeOutliers/shard-4/cacheCopy/ref_panel_1kg.depth.outliers_removed.vcf.gz",
+  "GenotypeBatch.batch_pesr_vcf": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-MergePesrVcfs/cacheCopy/ref_panel_1kg.filtered_pesr_merged.vcf.gz",
+  "GenotypeBatch.ped_file": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/ref-panel/1KG/v1/ped/1kg_ref_panel_v1.ped",
+  "GenotypeBatch.bin_exclude": "gs://gatk-sv-resources-public/hg38/v0/sv-resources/resources/v1/bin_exclude.hg38.gatkcov.bed.gz",
+  "GenotypeBatch.discfile": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-GatherBatchEvidence/GatherBatchEvidence/366e817a-feb2-4d3c-915c-a8bd25529b81/call-EvidenceMerging/EvidenceMerging/4906b24b-c0d8-4833-a1e0-ea68fe0b5ce3/call-MergePEShards/cacheCopy/ref_panel_1kg.PE.txt.gz",
+  "GenotypeBatch.coveragefile": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-EvidenceQC/EvidenceQC/f7f8f407-0a3c-4c3d-982f-7bd181ac965a/call-MakeBincovMatrix/MakeBincovMatrix/0106cefa-5ebf-4131-9073-15413bf93a83/call-ZPaste/cacheCopy/ref_panel_1kg.RD.txt.gz",
+  "GenotypeBatch.splitfile": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-GatherBatchEvidence/GatherBatchEvidence/366e817a-feb2-4d3c-915c-a8bd25529b81/call-EvidenceMerging/EvidenceMerging/4906b24b-c0d8-4833-a1e0-ea68fe0b5ce3/call-MergeSRShards/cacheCopy/ref_panel_1kg.SR.txt.gz",
+  "GenotypeBatch.medianfile": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-GatherBatchEvidence/GatherBatchEvidence/366e817a-feb2-4d3c-915c-a8bd25529b81/call-MedianCov/MedianCov/8ad48479-2e16-4be9-add6-1b47dbd9d95c/call-CalcMedCov/cacheCopy/ref_panel_1kg_medianCov.transposed.bed",
+  "GenotypeBatch.cohort_depth_vcf": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-ExcludeOutliers/shard-4/cacheCopy/ref_panel_1kg.depth.outliers_removed.vcf.gz",
+  "GenotypeBatch.cohort_pesr_vcf": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-MergePesrVcfs/cacheCopy/ref_panel_1kg.filtered_pesr_merged.vcf.gz"
+}

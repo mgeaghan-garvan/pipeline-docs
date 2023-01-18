@@ -1,0 +1,17 @@
+{
+  "FilterBatchQc.contig_list": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/contig.fai",
+
+  "FilterBatchQc.thousand_genomes_benchmark_calls": ["gs://gatk-sv-resources-public/hg38/v0/sv-resources/resources/v1/1000G_Sudmant/1000G_Sudmant.SV.AFR.bed.gz", "gs://gatk-sv-resources-public/hg38/v0/sv-resources/resources/v1/1000G_Sudmant/1000G_Sudmant.SV.ALL.bed.gz", "gs://gatk-sv-resources-public/hg38/v0/sv-resources/resources/v1/1000G_Sudmant/1000G_Sudmant.SV.AMR.bed.gz", "gs://gatk-sv-resources-public/hg38/v0/sv-resources/resources/v1/1000G_Sudmant/1000G_Sudmant.SV.EAS.bed.gz", "gs://gatk-sv-resources-public/hg38/v0/sv-resources/resources/v1/1000G_Sudmant/1000G_Sudmant.SV.EUR.bed.gz", "gs://gatk-sv-resources-public/hg38/v0/sv-resources/resources/v1/1000G_Sudmant/1000G_Sudmant.SV.SAS.bed.gz"],
+
+  "FilterBatchQc.sv_pipeline_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline:eph-fix-bad-ends-14b0202",
+  "FilterBatchQc.sv_base_mini_docker":"us.gcr.io/broad-dsde-methods/tbrookin/sv-base-mini:92ffa2f",
+  "FilterBatchQc.sv_pipeline_qc_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline-qc:eph-fix-bad-ends-14b0202",
+  
+  "FilterBatchQc.batch": "ref_panel_1kg",
+  
+  "FilterBatchQc.ped_file": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/ref-panel/1KG/v1/ped/1kg_ref_panel_v1.ped",
+  "FilterBatchQc.depth_vcf_noOutliers": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-ExcludeOutliers/shard-4/cacheCopy/ref_panel_1kg.depth.outliers_removed.vcf.gz",
+  "FilterBatchQc.merged_pesr_vcf": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-FilterBatch/FilterBatch/184defa3-e61c-4757-9962-f685f6d0d204/call-FilterBatchSamples/FilterBatchSamples/b308c32e-d171-4d8d-aeaf-b561c55b06b4/call-MergePesrVcfs/cacheCopy/ref_panel_1kg.filtered_pesr_merged.vcf.gz"
+}
+
+

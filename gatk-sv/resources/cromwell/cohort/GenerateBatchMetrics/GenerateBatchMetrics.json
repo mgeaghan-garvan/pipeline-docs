@@ -1,0 +1,33 @@
+{
+  "GenerateBatchMetrics.sv_pipeline_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline:eph-fix-bad-ends-14b0202",
+  "GenerateBatchMetrics.sv_pipeline_rdtest_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline-rdtest:eph-fix-bad-ends-14b0202",
+  "GenerateBatchMetrics.sv_base_mini_docker":"us.gcr.io/broad-dsde-methods/tbrookin/sv-base-mini:92ffa2f",
+  "GenerateBatchMetrics.sv_base_docker": "us.gcr.io/broad-dsde-methods/tbrookin/sv-base:c96d0e4",
+  "GenerateBatchMetrics.sv_pipeline_base_docker": "us.gcr.io/broad-dsde-methods/eph/sv-pipeline-base:eph-fix-bad-ends-14b0202",
+  "GenerateBatchMetrics.linux_docker" : "marketplace.gcr.io/google/ubuntu1804",
+
+  "GenerateBatchMetrics.BAF_split_size": "10000",
+  "GenerateBatchMetrics.RD_split_size": "10000",
+  "GenerateBatchMetrics.PE_split_size": "10000",
+  "GenerateBatchMetrics.SR_split_size": "1000",
+  "GenerateBatchMetrics.common_cnv_size_cutoff": "5000",
+  "GenerateBatchMetrics.allosome_contigs": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/allosome.fai",
+  "GenerateBatchMetrics.autosome_contigs": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/autosome.fai",
+  "GenerateBatchMetrics.rmsk": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/hg38.randomForest_blacklist.withRepMask.bed.gz",
+  "GenerateBatchMetrics.segdups": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/hg38.SD_gaps_Cen_Tel_Heter_Satellite_lumpy.blacklist.sorted.merged.bed.gz",
+  "GenerateBatchMetrics.ref_dict": "gs://gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dict",
+
+  "GenerateBatchMetrics.primary_contigs_list": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/resources/v1/primary_contigs.list",
+
+  "GenerateBatchMetrics.batch": "ref_panel_1kg",
+  "GenerateBatchMetrics.ped_file": "gs://gcp-public-data--broad-references/hg38/v0/sv-resources/ref-panel/1KG/v1/ped/1kg_ref_panel_v1.ped",
+  "GenerateBatchMetrics.discfile": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-GatherBatchEvidence/GatherBatchEvidence/366e817a-feb2-4d3c-915c-a8bd25529b81/call-EvidenceMerging/EvidenceMerging/4906b24b-c0d8-4833-a1e0-ea68fe0b5ce3/call-MergePEShards/cacheCopy/ref_panel_1kg.PE.txt.gz",
+  "GenerateBatchMetrics.baf_metrics": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-GatherBatchEvidence/GatherBatchEvidence/366e817a-feb2-4d3c-915c-a8bd25529b81/call-BAFFromGVCFs/BAFFromGVCFs/2c1274cf-01f5-4058-a120-a40801c31dc6/call-MergeEvidenceFiles/cacheCopy/ref_panel_1kg.BAF.txt.gz",
+  "GenerateBatchMetrics.coveragefile": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-EvidenceQC/EvidenceQC/f7f8f407-0a3c-4c3d-982f-7bd181ac965a/call-MakeBincovMatrix/MakeBincovMatrix/0106cefa-5ebf-4131-9073-15413bf93a83/call-ZPaste/cacheCopy/ref_panel_1kg.RD.txt.gz",
+  "GenerateBatchMetrics.splitfile": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-GatherBatchEvidence/GatherBatchEvidence/366e817a-feb2-4d3c-915c-a8bd25529b81/call-EvidenceMerging/EvidenceMerging/4906b24b-c0d8-4833-a1e0-ea68fe0b5ce3/call-MergeSRShards/cacheCopy/ref_panel_1kg.SR.txt.gz",
+  "GenerateBatchMetrics.medianfile": "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-GatherBatchEvidence/GatherBatchEvidence/366e817a-feb2-4d3c-915c-a8bd25529b81/call-MedianCov/MedianCov/8ad48479-2e16-4be9-add6-1b47dbd9d95c/call-CalcMedCov/cacheCopy/ref_panel_1kg_medianCov.transposed.bed",
+  "GenerateBatchMetrics.depth_vcf" : "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-ClusterBatch/ClusterBatch/52feaa2f-66f2-457f-93d9-8967bc4cba83/call-ClusterDepth/ClusterDepth/5ee72403-7739-438a-87cd-dfc657cad2ea/call-MakeDepthVCF/cacheCopy/ref_panel_1kg.depth.vcf.gz",
+  "GenerateBatchMetrics.manta_vcf" : "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-ClusterBatch/ClusterBatch/52feaa2f-66f2-457f-93d9-8967bc4cba83/call-ClusterPESR_manta/ClusterPESR/4557d675-5b77-489b-ab6c-02a1439877b5/call-ConcatVCFs/cacheCopy/ref_panel_1kg.manta.vcf.gz",
+  "GenerateBatchMetrics.wham_vcf" : "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-ClusterBatch/ClusterBatch/52feaa2f-66f2-457f-93d9-8967bc4cba83/call-ClusterPESR_wham/ClusterPESR/27daacc4-6b74-4a06-b8c2-1180494bbbdb/call-ConcatVCFs/cacheCopy/ref_panel_1kg.wham.vcf.gz",
+  "GenerateBatchMetrics.melt_vcf" : "gs://gatk-sv-ref-panel-1kg/outputs/GATKSVPipelineBatch/38c65ca4-2a07-4805-86b6-214696075fef/call-GATKSVPipelinePhase1/GATKSVPipelinePhase1/acce2c71-7458-4205-ae13-624f6efc9956/call-ClusterBatch/ClusterBatch/52feaa2f-66f2-457f-93d9-8967bc4cba83/call-ClusterPESR_melt/ClusterPESR/ffeae9d2-a9d3-401f-adfd-92290746b963/call-ConcatVCFs/cacheCopy/ref_panel_1kg.melt.vcf.gz"
+}
