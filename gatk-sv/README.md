@@ -32,6 +32,7 @@ The GATK-SV pipeline is large and complex, and as such the Broad Institute have 
       - The samples.tsv file specifies all the sample IDs, the locations of their BAM and gVCF files, and whether to allow the workflow to access Google Storage files that are specified as "requester pays".
       - The sample_set_membership.tsv file specifies sets of samples that are to be processed all in a single job simultaneously.
     - The Terra workspace.tsv file will need to be changed for one field: `cohort_ped_file` needs to point to a PED file specific to the cohort of interest. The PED format is described [here](https://gatk.broadinstitute.org/hc/en-us/articles/360035531972-PED-Pedigree-format).
+      - **IMPORTANT:** When constructing the PED file, ensure that the entries in the second column (individual ID) exactly match the entries in the sample_id column in the Terra data tables (samples.tsv and sample_set_membership.tsv).
   - The single-sample inputs are available under `inputs/build/NA12878`
     - Again, Terra inputs are in the sub-directory `terra`, while inputs for a custom Cromwell server are under `test`
     - Similar to the cohort mode, the samples.tsv file specifies all the sample IDs to be individually processed, the locations of their BAM and gVCF files, and whether to allow the workflow to access Google Storage files that are specified as "requester pays".
@@ -74,7 +75,9 @@ There are currently 12 main modules to the pipeline, which are listed here in th
 
 The default outputs can be used by going to the "Outputs" tab on the workflow page on Terra, and clicking "Use defaults" in the header row of the "Attribute" column.
 
-## Running the workflow
+## Running the workflow (Terra)
+
+The following instructions assume that the GATK-SV workflow is to be run on the Terra platform, as this simplifies the process of configuring the workflow. For very large cohorts, it may be necessary to run this pipeline on a custom Cromwell server due to the limits of Terra, however we haven't tested the workflow in this manner to date.
 
 ### Stage 01: Gather Sample Evidence
 
@@ -101,7 +104,7 @@ Simply select the new outlier-removed sample-set created following Stage 02 and 
 
 ### Stage 04: Gather Batch Evidence
 
-Run using the same sample set as Stage 03.
+Run using the same sample set as Stage 03. **Important:** ensure that the PED file is properly formatted and that the sample IDs recorded in it match the sample IDs in the Terra data table.
 
 ### Stage 05: Cluster Batch
 
