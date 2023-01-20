@@ -140,13 +140,13 @@ Run using the same sample set as Stage 03. **Important:** ensure that the PED fi
 
 The following table lists approximate times and costs for running each stage with based on a recent pilot run of a cohort of 179 samples where the inputs were GRCh-38-aligned CRAM files with typical coverages of ~30x and sizes of ~30GB.
 
-| Stage | Notes | Approx. Time (hours) | Approx. Cost (AUD) |
-| ----- | ----- | ------------ | ------------ |
-| 01 (without MELT) | Run at sample level | 13 | $1.65 |
-| 01 (with MELT) | Run at sample level | 19 | $3.15 |
-| 02 | Run at batch level - 179 samples | 3 | $2.15 |
-| 03 | Run at batch level - 167 samples (outliers removed) | 7 | $30 |
-| 04 |  |  |  |
+| Stage | Notes | Approx. Time (hours) | Approx. Cost Per Job (AUD) | Approx. Cost Per Sample (AUD) |
+| ----- | ----- | -------------------- | -------------------------- | ----------------------------- |
+| 01 | Run at sample level, without MELT | 13 | $1.65 | $1.65 |
+| 01 | Run at sample level, with MELT | 19 | $3.15 | $3.15 |
+| 02 | Run at batch level - 179 samples | 3 | $2.15 | $0.01 |
+| 03 | Run at batch level - 167 samples (outliers removed) | 7 | $30 | $0.18 |
+| 04 | Run at batch level - 167 samples (outliers removed) | 12 | $130 | $0.78 |
 | 05 |  |  |  |
 | 06 |  |  |  |
 | 07a |  |    |
