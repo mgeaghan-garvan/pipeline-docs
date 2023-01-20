@@ -100,17 +100,19 @@ At this stage, a new sample-set should be created reflecting the outlier-removed
 
 ### Stage 03: Train gCNV
 
-Simply select the new outlier-removed sample-set created following Stage 02 and start the run.
+Simply select the new outlier-removed sample-set created following stage 02 and start the run.
 
 ### Stage 04: Gather Batch Evidence
 
-Run using the same sample set as Stage 03. **Important:** ensure that the PED file is properly formatted and that the sample IDs recorded in it match the sample IDs in the Terra data table.
+Run using the same sample set as stage 03. **Important:** ensure that the PED file is properly formatted and that the sample IDs recorded in it match the sample IDs in the Terra data table.
 
 ### Stage 05: Cluster Batch
 
+Run using the same sample set as in stage 03 and stage 04.
 
 ### Stage 06: Filter Batch
 
+Run using the same sample set as in stages 03-05.
 
 #### 07a: Filter Batch Sites
 
@@ -147,13 +149,13 @@ The following table lists approximate times and costs for running each stage wit
 | 02 | Run at batch level - 179 samples | 3 | $2.15 | $0.01 |
 | 03 | Run at batch level - 167 samples (outliers removed) | 7 | $30 | $0.18 |
 | 04 | Run at batch level - 167 samples (outliers removed) | 12 | $130 | $0.78 |
-| 05 |  |  |  |
-| 06 |  |  |  |
-| 07a |  |    |
-| 07b |  |    |
-| 07c |  |    |
-| 08 |  |  |  |
-| 09 |  |  |  |
-| 10 |  |  |  |
-| 11 |  |  |  |
-| 12 |  |  |  |
+| 05 | Run at batch level - 167 samples (outliers removed) | 1 |  |  |
+| 06 |  |  |  |  |
+| 07a |  |  |  |  |
+| 07b |  |  |  |  |
+| 07c |  |  |  |  |
+| 08 |  |  |  |  |
+| 09 |  |  |  |  |
+| 10 |  |  |  |  |
+| 11 |  |  |  |  |
+| 12 |  |  |  |  |
