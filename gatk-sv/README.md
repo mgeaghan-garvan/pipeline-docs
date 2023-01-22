@@ -116,6 +116,7 @@ Run using the same sample set as in stages 03-05.
 
 #### 07a: Filter Batch Sites
 
+Run using the same sample set as in stages 03-06.
 
 #### 07b: Plot SV Counts Per Sample
 
@@ -149,8 +150,8 @@ The following table lists approximate times and costs for running each stage wit
 | 02 | Run at batch level - 179 samples | 3 | $2.15 | $0.01 |
 | 03 | Run at batch level - 167 samples (outliers removed) | 7 | $30 | $0.18 |
 | 04 | Run at batch level - 167 samples (outliers removed) | 12 | $130 | $0.78 |
-| 05 | Run at batch level - 167 samples (outliers removed) | 1 |  |  |
-| 06 |  |  |  |  |
+| 05 | Run at batch level - 167 samples (outliers removed) | 1 | $0.20 | < $0.01 |
+| 06 | Run at batch level - 167 samples (outliers removed) | 6 | $8.30 | $0.05 |
 | 07a |  |  |  |  |
 | 07b |  |  |  |  |
 | 07c |  |  |  |  |
