@@ -163,11 +163,11 @@ The following table lists approximate times and costs for running each stage wit
 | 04 | Run at batch level - 167 samples (outliers removed) | 12 | $130 | $0.78 |
 | 05 | Run at batch level - 167 samples (outliers removed) | 1 | $0.20 | < $0.01 |
 | 06 | Run at batch level - 167 samples (outliers removed) | 6 | $8.30 | $0.05 |
-| 07a | Run at batch level - 167 samples (outliers removed) | 1 |  |  |
-| 07b | Run at batch level - 167 samples (outliers removed) | 1 |  |  |
-| 07c | Run at batch level - 167 samples (outliers removed) | 1 |  |  |
+| 07a | Run at batch level - 167 samples (outliers removed) | 1 | < $0.01 | < $0.01 |
+| 07b | Run at batch level - 167 samples (outliers removed) | 1 | $0.01 | < $0.01 |
+| 07c | Run at batch level - 167 samples (outliers removed) | 1 | $0.02 | < $0.01 |
 | 08 | Not run in our pilot project (only run for multi-batch cohorts, at cohort level) | NA | NA | NA |
-| 09 | Run at batch level - single-batch version - 167 samples (outliers removed) |  |  |  |
-| 10 | Run at cohort level (one batch only) - single-batch version - 167 samples (outliers removed) |  |  |  |
-| 11 | Run at cohort level (one batch only) - single-batch version - 167 samples (outliers removed) |  |  |  |
+| 09 | Run at batch level - single-batch version - 167 samples (outliers removed) | 4 | $0.53 | < $0.01 |
+| 10 | Run at cohort level (one batch only) - single-batch version - 167 samples (outliers removed) | 2 | $0.06 | < $0.01 |
+| 11 | Run at cohort level (one batch only) - single-batch version - 167 samples (outliers removed) | 7 | $4.62 | $0.03 |
 | 12 | Run at cohort level (one batch only) - single-batch version - 167 samples (outliers removed) |  |  |  |
