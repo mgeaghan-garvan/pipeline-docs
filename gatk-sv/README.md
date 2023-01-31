@@ -170,4 +170,4 @@ The following table lists approximate times and costs for running each stage wit
 | 09 | Run at batch level - single-batch version - 167 samples (outliers removed) | 4 | $0.53 | < $0.01 |
 | 10 | Run at cohort level (one batch only) - single-batch version - 167 samples (outliers removed) | 2 | $0.06 | < $0.01 |
 | 11 | Run at cohort level (one batch only) - single-batch version - 167 samples (outliers removed) | 7 | $4.62 | $0.03 |
-| 12 | Run at cohort level (one batch only) - single-batch version - 167 samples (outliers removed) |  |  |  |
+| 12 | Run at cohort level (one batch only) - single-batch version - 167 samples (outliers removed) | 2 | $0.78 | < $0.01 |
