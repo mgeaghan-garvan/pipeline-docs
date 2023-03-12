@@ -1,6 +1,6 @@
 # Running GATK-SV
 
-This is a work-in-progress SOP/documentation for running the GATK-SV pipeline on Terra.
+This is documentation for running the GATK-SV pipeline on Terra.
 
 GATK-SV runs in one of two main modes: batch and single-sample. Batch mode is intended for cohorts larger than 100 samples, and won't work for cohorts less than 10 samples. For small cohorts, single-sample mode should be used on each sample individually. Single-sample mode requires a reference panel, which will ideally be created using a cohort as similar as possible to the target sample. A standard reference panel is hosted by the Broad Institute in their public Google Cloud resource bucket based on samples from the 1000 Genomes project and can be used if no other relevant reference panel is available.
 
@@ -44,7 +44,7 @@ All of the GATK-SV workflows are currently hosted through Dockstore and originat
 
 The single-sample pipeline consists of a [single workflow](https://dockstore.org/my-workflows/github.com/shyamrav/gatk-sv/GATKSVPipelineSingleSample.wdl).
 
-It is possible to run the batch pipeline with a single workflow ([GATKSVPipelineBatch](https://dockstore.org/my-workflows/github.com/shyamrav/gatk-sv/GATKSVPipelineBatch)) that runs all the necessary sub-modules, but it isn't recommend for Terra, and the inputs for this workflow aren't produced by the build scripts. In part, this is due to the large number of parameters required for the entire workflow, which Terra doesn't handle very well. It can also be easier to diagnose and manage failures of runs when the workflow is run as separate sub-modules. Additionally, there is a step (module 07b) where manual inspection of results and selection of an outlier cutoff parameter is recommended for further processing. As such, for discussion of working in Terra, this documentaiton will only cover running the individual sub-modules.
+It is possible to run the batch pipeline with a single workflow ([GATKSVPipelineBatch](https://dockstore.org/my-workflows/github.com/shyamrav/gatk-sv/GATKSVPipelineBatch)) that runs all the necessary sub-modules, but it isn't recommend for Terra, and the inputs for this workflow aren't produced by the build scripts. In part, this is due to the large number of parameters required for the entire workflow, which Terra doesn't handle very well. It can also be easier to diagnose and manage failures of runs when the workflow is run as separate sub-modules. Additionally, there are quality control steps (stages 02 and 07b) where manual inspection of results and selection of an outlier cutoff parameter is recommended for further processing. As such, for discussion of working in Terra, this documentaiton will only cover running the individual sub-modules.
 
 There are currently 12 main modules to the pipeline, which are listed here in the order to be run:
 - [01_GatherSampleEvidence](https://dockstore.org/workflows/github.com/shyamrav/gatk-sv/GATKSVPipelineBatch_01_GatherSampleEvidence:terra_test_2)
